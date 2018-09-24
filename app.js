@@ -9,7 +9,7 @@ app.set('view engine', 'pug');
 app.set('views', 'views');
 
 // definimos el schema
-var schema = mongoose.Schema({ name: String, email: String });
+var schema = mongoose.Schema({ name: String, email: String, password: String });
 // definimos el modelo
 var User = mongoose.model("User", schema);
 
